@@ -3,33 +3,64 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
     <title>Design and Development</title>
   </head>
 
-<body class="container-fluid">
-  <!--this is the navbar-->
-    <div class="nav navbar-default navbar-fixed-top" role="navbar">
-      <row>
-      <ul class="header">
-        <div class="col-xs-2"><a href="index.html" class=><li>Icon</li></a></div>
-        <div class="col-xs-1 col-xs-offset-4"><a href="#" class="nav-link btn btn-default"><li>About</li></a></div>
-        <div class="col-xs-1"><a href="#" class="nav-link btn btn-default"><li>Portfolio</li></a></div>
-        <div class="col-xs-1"><a href="#" class="nav-link btn btn-default"><li>Content</li></a></div>
-      </row>
+<!--Navbar items-->
+<body>
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="nav navbar-brand">
+      <a href="index.html">Icon</a>
     </div>
-  </nav>
 
-<!-- this is the jumbotron-->
-<div class="jumbotron">
-  <row>
-    <p class="col-md-8"> This is all about me</p>
-    <img class="photo col-md-4" src="#">
-  </row>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" role="navigation" aria-expanded="false">
+      <ul class="nav navbar-right">
+        <li><a name="about">About</a></li>
+        <li><a name="portfolio">Portfolio</a></li>
+        <li><a name="contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
+</nav>
+</body>
 
-<!--these are the links to the portfolio-->
 
+<!--About section-->
+<body id="about" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="col-sm-8">
+        <p>About</p>
+        <hr></hr>
+        <p>Blah blah blah</p>
+      </div>
+      <img src="#" alt="me" class="col-sm-4">
+    </div>
+  </div>
+</body>
 
+<body id="portfolio" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container-fluid">
+    <h2>Portfolio</h2>
+    <p>blah blah blah</p>
+  </div>
+</body>
 
+<body id="contact" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container-fluid">
+    <h2>Contact</h2>
+    <p>blah blah blah</p>
+  </div>
+</body>
 </body>
 </html>
